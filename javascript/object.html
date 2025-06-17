@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="./image/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/object.js"></script>
+</head>
+<body>
+
+<div id="result"></div>
+
+<script>
+  const result = document.querySelector('#result');
+  
+  result.innerHTML  = SomeObject.name + '<br>';
+  result.innerHTML += SomeObject.age + '<br>';
+  result.innerHTML += SomeObject.gender + '<br>';
+  result.innerHTML += SomeObject.address.country + '<br>';
+  result.innerHTML += SomeObject.address.state + '<br>';
+  result.innerHTML += SomeObject.address.city + '<br>';
+  result.innerHTML += SomeObject.address.address + '<br>';
+  result.innerHTML += SomeObject.birthday.toString() + '<br>';
+  
+  console.log(SomeObject);
+</script>
+</body>
+</html>

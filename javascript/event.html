@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="./image/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div>
+    <input type="text" id="name">
+  </div>
+  <div>
+    <input type="number" id="age">
+  </div>
+
+  <button type="button" class="btn">実行</button>
+  <div class="result"></div>
+
+<script>
+  let name, age;
+  
+  const n = document.querySelector('#name');
+  const a = document.querySelector('#age');
+
+  n.addEventListener('input', (e) => {
+    name = e.target.value;
+    console.log(name);
+  });
+  a.addEventListener('input', (e) => {
+    age = e.target.value;
+    console.log(age);
+  });
+
+  const btn = document.querySelector('.btn');
+  btn.addEventListener('click', (e) => {
+    const result = document.querySelector('.result');
+    result.innerHTML = '<span style="color:crimson;">CLICKED!</span>';
+    result.innerHTML += '<div style="color:darkgreen">' + name + '</div>';
+    result.innerHTML += '<span style="color:olivedrab">' + age + '</span>';
+  });
+</script>
+</body>
+</html>

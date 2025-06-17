@@ -1,0 +1,78 @@
+@charset 'utf-8';
+/* -----------------------------------------------------
+ |
+ ---------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* -----------------------------------------------------
+ | ヘッダー部
+ ---------------------------------------------------- */
+header {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  box-shadow: 2px 2px 4px gray;
+  padding: 20px;
+}
+
+/* -----------------------------------------------------
+ | ボディ部
+ ---------------------------------------------------- */
+main {
+  position: relative;
+  display: inline-box;
+  margin-top: 120px;
+  padding-left: 20px;
+}
+main label {
+  font-weight: bold;
+  color: dimgray;
+}
+
+/* -----------------------------------------------------
+ | カスタマイズ
+ ---------------------------------------------------- */
+.case01 {
+  display: flex;
+}
+#resp-case01 {
+  padding: 20px;
+  color: green;
+}
+#txt-box {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 400px;
+  padding: 5px 10px;
+  font-size: 1.0rem;
+}
+#txt-box:focus {
+  color: slateblue;
+  background-color: #eee;
+}
+.btn-nav {
+  display: flex;
+  justify-content: start;
+  margin-top: 20px;
+}
+.btn {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 15px;
+  /* font-size: 1.2rem; */
+  background-color: steelblue;
+  color: whitesmoke; 
+}
+.result {
+  color: green;
+  font-weight: bold;
+}

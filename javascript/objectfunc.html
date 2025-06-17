@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="./image/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="./js/objectfunc.js"></script>
+</head>
+<body>
+<div id="result"></div>
+
+<script>
+  const result = document.querySelector('#result');
+
+  result.innerHTML  = Human.name.first + '<br>';
+  result.innerHTML += Human.name.last + '<br>';
+  result.innerHTML += Human.age + '<br>';
+  result.innerHTML += Human.address + '<br>';
+  result.innerHTML += Human.getFullName() + '<br>';
+</script>
+</body>
+</html>
